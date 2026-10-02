@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.openai.cobblemonoritechpower.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "PoweredMachineBlockEntityMixin",
+    "BlockEntityPersistenceMixin",
+    "TMMachinePowerMixin",
+    "FossilMachinePowerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

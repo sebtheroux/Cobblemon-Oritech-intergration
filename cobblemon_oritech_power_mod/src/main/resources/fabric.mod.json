@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "cobblemon_oritech_power",
+  "version": "${version}",
+  "name": "Cobblemon Oritech Power",
+  "description": "Makes Cobblemon machines consume Oritech-compatible energy through the TechReborn Energy API.",
+  "authors": ["Custom modpack integration"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.openai.cobblemonoritechpower.CobblemonOritechPower"
+    ]
+  },
+  "mixins": [
+    "cobblemon_oritech_power.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.3",
+    "minecraft": "=1.21.1",
+    "fabric-api": ">=0.116.17+1.21.1",
+    "cobblemon": "=1.8.1+1.21.1",
+    "oritech": "=1.2.12",
+    "team_reborn_energy": ">=4.1.0 <4.2.0"
+  }
+}
